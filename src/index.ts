@@ -13,9 +13,6 @@ export * from "./PopoverContent";
     exports: [
         PopoverContent,
         Popover,
-    ],
-    entryComponents: [
-        PopoverContent
     ]
 })
 export class PopoverModule {

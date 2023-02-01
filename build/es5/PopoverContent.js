@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PopoverContent = void 0;
 var core_1 = require("@angular/core");
 var i0 = require("@angular/core");
 var _c0 = ["popoverDiv"];
@@ -205,24 +206,22 @@ var PopoverContent = /** @class */ (function () {
         return desiredPlacement;
     };
     PopoverContent.ɵfac = function PopoverContent_Factory(t) { return new (t || PopoverContent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(i0.Renderer2)); };
-    PopoverContent.ɵcmp = i0.ɵɵdefineComponent({ type: PopoverContent, selectors: [["popover-content"]], viewQuery: function PopoverContent_Query(rf, ctx) { if (rf & 1) {
-            i0.ɵɵstaticViewQuery(_c0, true);
+    PopoverContent.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: PopoverContent, selectors: [["popover-content"]], viewQuery: function PopoverContent_Query(rf, ctx) { if (rf & 1) {
+            i0.ɵɵviewQuery(_c0, 7);
         } if (rf & 2) {
-            var _t;
+            var _t = void 0;
             i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.popoverDiv = _t.first);
         } }, inputs: { content: "content", inBody: "inBody", popoverInBody: "popoverInBody", placement: "placement", title: "title", animation: "animation", closeOnClickOutside: "closeOnClickOutside", closeOnMouseOutside: "closeOnMouseOutside" }, ngContentSelectors: _c1, decls: 9, vars: 15, consts: [["role", "popover", 2, "display", "block"], ["popoverDiv", ""], [1, "virtual-area", 3, "hidden"], [1, "arrow"], [1, "popover-title", 3, "hidden"], [1, "popover-content"], [3, "innerHtml"]], template: function PopoverContent_Template(rf, ctx) { if (rf & 1) {
             i0.ɵɵprojectionDef();
             i0.ɵɵelementStart(0, "div", 0, 1);
-            i0.ɵɵelement(2, "div", 2);
-            i0.ɵɵelement(3, "div", 3);
+            i0.ɵɵelement(2, "div", 2)(3, "div", 3);
             i0.ɵɵelementStart(4, "h3", 4);
             i0.ɵɵtext(5);
             i0.ɵɵelementEnd();
             i0.ɵɵelementStart(6, "div", 5);
             i0.ɵɵprojection(7);
             i0.ɵɵelement(8, "div", 6);
-            i0.ɵɵelementEnd();
-            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd()();
         } if (rf & 2) {
             i0.ɵɵclassMapInterpolate1("popover ", ctx.effectivePlacement, "");
             i0.ɵɵstyleProp("top", ctx.top + "px")("left", ctx.left + "px");
@@ -239,13 +238,9 @@ var PopoverContent = /** @class */ (function () {
     return PopoverContent;
 }());
 exports.PopoverContent = PopoverContent;
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(PopoverContent, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PopoverContent, [{
         type: core_1.Component,
-        args: [{
-                selector: "popover-content",
-                template: "\n<div #popoverDiv class=\"popover {{ effectivePlacement }}\"\n     [style.top]=\"top + 'px'\"\n     [style.left]=\"left + 'px'\"\n     [class.in]=\"isIn\"\n     [class.fade]=\"animation\"\n     style=\"display: block\"\n     role=\"popover\">\n    <div [hidden]=\"!closeOnMouseOutside\" class=\"virtual-area\"></div>\n    <div class=\"arrow\"></div>\n    <h3 class=\"popover-title\" [hidden]=\"!title\">{{ title }}</h3>\n    <div class=\"popover-content\">\n        <ng-content></ng-content>\n        <div [innerHtml]=\"content\"></div>\n    </div>\n</div>\n",
-                styles: ["\n.popover .virtual-area {\n    height: 11px;\n    width: 100%;\n    position: absolute;\n}\n.popover.top .virtual-area {\n    bottom: -11px;\n}\n.popover.bottom .virtual-area {\n    top: -11px;\n}\n.popover.left .virtual-area {\n    right: -11px;\n}\n.popover.right .virtual-area {\n    left: -11px;\n}\n"]
-            }]
+        args: [{ selector: "popover-content", template: "\n<div #popoverDiv class=\"popover {{ effectivePlacement }}\"\n     [style.top]=\"top + 'px'\"\n     [style.left]=\"left + 'px'\"\n     [class.in]=\"isIn\"\n     [class.fade]=\"animation\"\n     style=\"display: block\"\n     role=\"popover\">\n    <div [hidden]=\"!closeOnMouseOutside\" class=\"virtual-area\"></div>\n    <div class=\"arrow\"></div>\n    <h3 class=\"popover-title\" [hidden]=\"!title\">{{ title }}</h3>\n    <div class=\"popover-content\">\n        <ng-content></ng-content>\n        <div [innerHtml]=\"content\"></div>\n    </div>\n</div>\n", styles: ["\n.popover .virtual-area {\n    height: 11px;\n    width: 100%;\n    position: absolute;\n}\n.popover.top .virtual-area {\n    bottom: -11px;\n}\n.popover.bottom .virtual-area {\n    top: -11px;\n}\n.popover.left .virtual-area {\n    right: -11px;\n}\n.popover.right .virtual-area {\n    left: -11px;\n}\n"] }]
     }], function () { return [{ type: i0.ElementRef }, { type: i0.ChangeDetectorRef }, { type: i0.Renderer2 }]; }, { content: [{
             type: core_1.Input
         }], inBody: [{

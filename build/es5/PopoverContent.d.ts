@@ -53,6 +53,6 @@ export declare class PopoverContent implements AfterViewInit, OnDestroy {
     protected isStaticPositioned(nativeEl: HTMLElement): boolean;
     protected parentOffsetEl(nativeEl: HTMLElement): any;
     protected getEffectivePlacement(placement: string, hostElement: HTMLElement, targetElement: HTMLElement): string;
-    static ɵfac: i0.ɵɵFactoryDef<PopoverContent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<PopoverContent, "popover-content", never, { "content": "content"; "inBody": "inBody"; "popoverInBody": "popoverInBody"; "placement": "placement"; "title": "title"; "animation": "animation"; "closeOnClickOutside": "closeOnClickOutside"; "closeOnMouseOutside": "closeOnMouseOutside"; }, {}, never, ["*"]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<PopoverContent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<PopoverContent, "popover-content", never, { "content": "content"; "inBody": "inBody"; "popoverInBody": "popoverInBody"; "placement": "placement"; "title": "title"; "animation": "animation"; "closeOnClickOutside": "closeOnClickOutside"; "closeOnMouseOutside": "closeOnMouseOutside"; }, {}, never, ["*"], false, never>;
 }

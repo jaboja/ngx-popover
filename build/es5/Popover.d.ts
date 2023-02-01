@@ -32,6 +32,6 @@ export declare class Popover implements OnChanges {
     show(): void;
     hide(): void;
     getElement(): any;
-    static ɵfac: i0.ɵɵFactoryDef<Popover, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<Popover, "[popover]", ["popover"], { "content": "popover"; "popoverInBody": "popoverInBody"; "popoverDisabled": "popoverDisabled"; "popoverAnimation": "popoverAnimation"; "popoverPlacement": "popoverPlacement"; "popoverTitle": "popoverTitle"; "popoverOnHover": "popoverOnHover"; "popoverCloseOnClickOutside": "popoverCloseOnClickOutside"; "popoverCloseOnMouseOutside": "popoverCloseOnMouseOutside"; "popoverDismissTimeout": "popoverDismissTimeout"; }, { "onShown": "onShown"; "onHidden": "onHidden"; }, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<Popover, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<Popover, "[popover]", ["popover"], { "content": "popover"; "popoverInBody": "popoverInBody"; "popoverDisabled": "popoverDisabled"; "popoverAnimation": "popoverAnimation"; "popoverPlacement": "popoverPlacement"; "popoverTitle": "popoverTitle"; "popoverOnHover": "popoverOnHover"; "popoverCloseOnClickOutside": "popoverCloseOnClickOutside"; "popoverCloseOnMouseOutside": "popoverCloseOnMouseOutside"; "popoverDismissTimeout": "popoverDismissTimeout"; }, { "onShown": "onShown"; "onHidden": "onHidden"; }, never, never, false, never>;
 }

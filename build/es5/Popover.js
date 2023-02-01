@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Popover = void 0;
 var core_1 = require("@angular/core");
 var PopoverContent_1 = require("./PopoverContent");
 var i0 = require("@angular/core");
@@ -149,13 +150,13 @@ var Popover = /** @class */ (function () {
         return this.viewContainerRef.element.nativeElement;
     };
     Popover.ɵfac = function Popover_Factory(t) { return new (t || Popover)(i0.ɵɵdirectiveInject(i0.ViewContainerRef), i0.ɵɵdirectiveInject(i0.ComponentFactoryResolver), i0.ɵɵdirectiveInject(i0.ApplicationRef), i0.ɵɵdirectiveInject(i0.Injector)); };
-    Popover.ɵdir = i0.ɵɵdefineDirective({ type: Popover, selectors: [["", "popover", ""]], hostBindings: function Popover_HostBindings(rf, ctx) { if (rf & 1) {
+    Popover.ɵdir = /*@__PURE__*/ i0.ɵɵdefineDirective({ type: Popover, selectors: [["", "popover", ""]], hostBindings: function Popover_HostBindings(rf, ctx) { if (rf & 1) {
             i0.ɵɵlistener("click", function Popover_click_HostBindingHandler() { return ctx.showOrHideOnClick(); })("focusin", function Popover_focusin_HostBindingHandler() { return ctx.showOnHover(); })("mouseenter", function Popover_mouseenter_HostBindingHandler() { return ctx.showOnHover(); })("focusout", function Popover_focusout_HostBindingHandler() { return ctx.hideOnHover(); })("mouseleave", function Popover_mouseleave_HostBindingHandler() { return ctx.hideOnHover(); });
         } }, inputs: { content: ["popover", "content"], popoverInBody: "popoverInBody", popoverDisabled: "popoverDisabled", popoverAnimation: "popoverAnimation", popoverPlacement: "popoverPlacement", popoverTitle: "popoverTitle", popoverOnHover: "popoverOnHover", popoverCloseOnClickOutside: "popoverCloseOnClickOutside", popoverCloseOnMouseOutside: "popoverCloseOnMouseOutside", popoverDismissTimeout: "popoverDismissTimeout" }, outputs: { onShown: "onShown", onHidden: "onHidden" }, exportAs: ["popover"], features: [i0.ɵɵNgOnChangesFeature] });
     return Popover;
 }());
 exports.Popover = Popover;
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(Popover, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(Popover, [{
         type: core_1.Directive,
         args: [{
                 selector: "[popover]",
