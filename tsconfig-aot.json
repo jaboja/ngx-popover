@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-	"outDir": "./",
+    "outDir": "./build/es5/",
     "target": "es5",
     "lib": ["es6", "dom"],
     "module": "commonjs",
@@ -15,7 +15,7 @@
     "stripInternal": true
   },
   "exclude": [
-	"build",
+    "build",
     "node_modules"
   ],
   "files": [
