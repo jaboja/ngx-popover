@@ -19,30 +19,36 @@
     "typescript",
     "angular2-popover"
   ],
+  "scripts": {
+    "tsc": "ngc -p tsconfig-aot.json"
+  },
+  "dependencies": {
+    "@angular/common": "^8.2.2",
+    "@angular/core": "^8.2.2"
+  },
   "peerDependencies": {},
   "devDependencies": {
-    "@angular/common": "^8.2.2",
     "@angular/compiler": "^8.2.2",
     "@angular/compiler-cli": "^8.2.2",
-    "@angular/core": "^8.2.2",
     "@angular/forms": "^8.2.2",
     "@angular/platform-browser": "^8.2.2",
     "@angular/platform-browser-dynamic": "^8.2.2",
+    "@angular-devkit/schematics": "^8.2.2",
     "@types/node": "^8.0.47",
     "bootstrap": "^3.3.7",
     "chai": "^4.1.2",
     "del": "^3.0.0",
     "es6-shim": "^0.35.3",
-    "gulp": "^3.9.1",
-    "gulp-file": "^0.3.0",
-    "gulp-mocha": "^4.3.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.6.1",
-    "gulp-shell": "^0.6.3",
-    "gulp-tslint": "^8.1.2",
-    "gulp-typescript": "^3.2.3",
-    "gulp-uglify": "^3.0.0",
-    "gulpclass": "^0.1.2",
+    "gulp": "^4.0.2",
+    "gulp-file": "^0.4.0",
+    "gulp-mocha": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-shell": "^0.8.0",
+    "gulp-tslint": "^8.1.4",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify": "^3.0.2",
+    "gulpclass": "^0.2.0",
     "mocha": "^4.0.1",
     "reflect-metadata": "0.1.10",
     "rxjs": "^6.5.2",
@@ -53,11 +59,5 @@
     "tslint-stylish": "^2.1.0",
     "typescript": "^3.5.3",
     "zone.js": "^0.9.1"
-  },
-  "scripts": {
-    "tsc": "ngc -p tsconfig-aot.json"
-  },
-  "dependencies": {
-    "@angular-devkit/schematics": "^8.2.1"
   }
 }
