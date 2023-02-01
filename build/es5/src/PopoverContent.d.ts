@@ -1,9 +1,10 @@
-import { AfterViewInit, ElementRef, ChangeDetectorRef, OnDestroy, EventEmitter, Renderer } from "@angular/core";
+import { AfterViewInit, ElementRef, ChangeDetectorRef, OnDestroy, EventEmitter, Renderer2 } from "@angular/core";
 import { Popover } from "./Popover";
+import * as i0 from "@angular/core";
 export declare class PopoverContent implements AfterViewInit, OnDestroy {
     protected element: ElementRef;
     protected cdr: ChangeDetectorRef;
-    protected renderer: Renderer;
+    protected renderer2: Renderer2;
     content: string;
     inBody: string;
     popoverInBody: boolean;
@@ -24,7 +25,7 @@ export declare class PopoverContent implements AfterViewInit, OnDestroy {
      * Closes dropdown if user clicks outside of this directive.
      */
     onDocumentMouseDown: (event: any) => void;
-    constructor(element: ElementRef, cdr: ChangeDetectorRef, renderer: Renderer);
+    constructor(element: ElementRef, cdr: ChangeDetectorRef, renderer2: Renderer2);
     listenClickFunc: any;
     listenMouseFunc: any;
     ngAfterViewInit(): void;
@@ -52,4 +53,6 @@ export declare class PopoverContent implements AfterViewInit, OnDestroy {
     protected isStaticPositioned(nativeEl: HTMLElement): boolean;
     protected parentOffsetEl(nativeEl: HTMLElement): any;
     protected getEffectivePlacement(placement: string, hostElement: HTMLElement, targetElement: HTMLElement): string;
+    static ɵfac: i0.ɵɵFactoryDef<PopoverContent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<PopoverContent, "popover-content", never, { "content": "content"; "inBody": "inBody"; "popoverInBody": "popoverInBody"; "placement": "placement"; "title": "title"; "animation": "animation"; "closeOnClickOutside": "closeOnClickOutside"; "closeOnMouseOutside": "closeOnMouseOutside"; }, {}, never, ["*"]>;
 }
